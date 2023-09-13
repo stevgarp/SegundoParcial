@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <script type="module" src="/pages/TaskList/TaskList.js"></script>
+</head>
+<style>body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .add-task {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-task input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    margin-right: 10px;
+  }
+  
+  .add-task button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .add-task button:hover {
+    background-color: #0056b3;
+  }
+  
+  .tasks-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  button#delete-completed-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  button#delete-completed-button:hover {
+    background-color: #cc0000;
+  }</style>
+<body>
+    <h1>Lista de Tareas</h1>
+    <div class="add-task">
+        <input type="text" id="task-input" placeholder="Agregar tarea">
+        <button id="add-button">Agregar</button>
+    </div>
+    <div class="tasks-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Tarea</th>
+                    <th>Completada</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tasks-table"></tbody>
+        </table>
+        <button id="delete-completed-button">Eliminar Completadas</button>
+    </div>
+</body>
+</html>
