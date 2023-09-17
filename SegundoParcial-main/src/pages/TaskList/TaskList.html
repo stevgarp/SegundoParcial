@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tareas</title>
-    <script type="module" src="/pages/TaskList/TaskList.js"></script>
-</head>
-<style>body {
+  </head>
+  <style>body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
@@ -103,19 +102,20 @@
     <div class="add-task">
         <input type="text" id="task-input" placeholder="Agregar tarea">
         <button id="add-button">Agregar</button>
-    </div>
-    <div class="tasks-container">
+      </div>
+      <div class="tasks-container">
         <table>
-            <thead>
-                <tr>
-                    <th>Tarea</th>
-                    <th>Completada</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody id="tasks-table"></tbody>
+          <thead>
+            <tr>
+              <th>Tarea</th>
+              <th>Completada</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tasks-table"></tbody>
         </table>
         <button id="delete-completed-button">Eliminar Completadas</button>
-    </div>
+      </div>
+      <script type="module" src="TaskList.js"></script>
 </body>
 </html>

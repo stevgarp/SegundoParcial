@@ -1,4 +1,4 @@
-import { ModuleCalculo } from "../../modules/Agregator.js";
+import {ModuleCalculo} from "../../modules/Agregator.js";
 
 const { sumar, restar, multiplicar, dividir } = ModuleCalculo;
 
@@ -26,7 +26,8 @@ function calcular() {
     }
   
     document.getElementById('resultado').textContent = `Resultado: ${resultado}`;
+      // Asigna la función calcular() al botón
+
   }
   
-  // Asigna la función calcular() al botón
   document.querySelector('button').addEventListener('click', calcular);
